@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Modifier l'Onglet</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<div class="container">
+    <h2>Modifier l'Onglet</h2>
+
+    <label for="tabName">Nom de l'onglet :</label>
+    <input type="text" id="tabName" placeholder="Entrez le nouveau nom">
+
+    <label for="favicon">Nouvelle icône :</label>
+    <input type="file" id="favicon" accept="image/*">
+    <div id="faviconPreviewContainer" class="hidden">
+        <p>Prévisualisation :</p>
+        <img id="faviconPreview" src="#" alt="Prévisualisation de l'icône" />
+    </div>
+
+    <div class="buttons">
+        <button id="applyBtn">Appliquer</button>
+        <button id="resetBtn">Réinitialiser</button>
+    </div>
+
+    <div id="message" class="hidden"></div>
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>

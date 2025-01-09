@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Modificateur de Tab",
+  "description": "Permet de modifier le nom de l'onglet et l'icône (favicon).",
+  "version": "1.0",
+  "icons": {
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/icon48.png",
+      "96": "icons/icon96.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
